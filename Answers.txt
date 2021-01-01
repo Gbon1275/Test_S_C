@@ -1,0 +1,25 @@
+I would run this in aws lambda as a function. Python is supported and its easy to deploy, also cost metering and scalability
+would be of benifit however i would not think that automation like this.
+Simple Message Queue:
+    We need something to hold the messages for the other services to pick up and action.
+AWS Lambda Function:
+    this would be for holding the code and executing the task when required.
+S3 Bucket:
+    this was the stated upload destination for clients.
+some trigger:
+    if all of these files arrived together i was say that would be the best trigger or a cron job for every so often
+
+I would further import this by adding aging to the function for managing the CSV's also a been touched logic to know
+that the function is not rehashing old information. further I would improve error handling and reporting as i feel that
+this implementation is fine for a POC but not for a production system. I think I would also see if there is not a better
+way to do this in the future so that this automation could be removed maybe a module or api that allows customers to post
+there messages by themselves in the future.
+
+Apart from being rushed for time this was one of the better coding challenges I have seen and I really enjoyed working
+on it.
+
+Happy Holidays.
+
+
+
+
