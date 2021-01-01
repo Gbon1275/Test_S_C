@@ -1,5 +1,5 @@
 I would run this in aws lambda as a function. Python is supported and its easy to deploy, also cost metering and scalability
-would be of benifit however i would not think that automation like this.
+would be of benifit however i would not think that automation like this would not be the best way forward in the future.
 Simple Message Queue:
     We need something to hold the messages for the other services to pick up and action.
 AWS Lambda Function:
